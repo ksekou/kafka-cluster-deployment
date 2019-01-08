@@ -1,6 +1,11 @@
 
 # Part I: Installation
 
+    We will assume these 3 nodes:
+        test-kafka01    10.240.0.41
+        test-kafka02    10.240.0.45
+        test-kafka03    10.240.0.48
+
 
 ## Step 1: Install Java
 
@@ -42,7 +47,7 @@ sudo chown ${USER}:${USER} -R /var/zookeeper
 
 # Part 3: Setup Kafka
 
-# Step 1: Create the data directories for Kafka on all menbers of the cluster
+## Step 1: Create the data directories for Kafka on all menbers of the cluster
 
 ```bash
 sudo mkdir -p /var/kafka/kafka-logs
